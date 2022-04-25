@@ -1,0 +1,119 @@
+/*----------------------- Шрифты ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,100&display=swap');
+/*----------------------- Обнуление ------------------------------ */
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*----------------------- Основное ------------------------------ */
+
+.container{
+	background-image: url(img/bg1.png);
+	max-width: 1215px;
+	max-height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 150px;
+	padding-left: 150px;
+}
+
+.concept{
+	width: 100%;
+	height: 100%;
+	background: url("../img/bg1.png") center/cover fixed no-repeat;
+	display: flex;
+}
+
+.nav{
+	display: flex;
+	padding-top: 37px;
+}
+
+.nav__burger{
+
+}
+
+.nav__languages{
+	
+}
+
+.nav__burger_line1{
+	display: block;
+	position: relative;
+	right: 0;
+	width: 25px;
+	height: 20px;
+}
+
+.nav__burger_line1::before{
+	margin-top: 15px;
+	content: '';
+	background-color: #3B3B3B;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	top: 0;
+	transition: 0.5s;
+}
+
+.nav__burger_line2{
+	display: block;
+	position: relative;
+	right: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.nav__burger_line2::before{
+	content: '';
+	background-color: #3B3B3B;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	top: 0;
+	transition: 0.5s;
+}
+
+.nav__languages_text{
+	font-family: 'Montserrat',sans-serif;
+	color: #3B3B3B;
+	font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+}
+
+
+
+
+/*----------------------- media query ------------------------------ */
